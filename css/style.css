@@ -4,6 +4,11 @@ body{
 }
 
 
+html{
+    width:100%
+}
+
+
 h1{
     font-size:30px
 }
@@ -247,12 +252,16 @@ section{
     #logo img{
         width:15%
     }
-    
+
+    #logo{
+        width:100.5%
+    }
+
     h2{
-        font-size:30px
+        font-size:30px;
     }
     .slider{
-        width:80%
+        width:90%
         
     }
     .artg{
@@ -261,14 +270,6 @@ section{
     }
     article img{
         width:100%;
-    }
-
-    #conteudo-esquerda{
-        
-    }
-    
-    #conteudo-direita{
-        float:left
     }
 
     section{
