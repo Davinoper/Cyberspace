@@ -276,6 +276,24 @@ section{
         float:center
     }
 
+    #conteudo-direita img{
+        width:60%
+    }
+
+    #conteudo-esquerda img{
+        width:100%
+
+    }
+
+    #conteudo-esquerda{
+        margin:0;
+        width:60%
+    }
+ 
+    #conteudo-direita{
+        width:35%
+    }
+
 }
 
 @media(min-width:800px){
