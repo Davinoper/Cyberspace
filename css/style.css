@@ -11,46 +11,67 @@ h1{
 h2{
     text-align:center;
     color:#cc0000;
-    font-size: 50px
+    font-size: 50px;
+    position: relative;
+    margin-top:50px; 
 }
 
 
 .menuprincipal ul{
     background-color:black;
-    display:inline-block;
-    padding: 30px;
-    height: 30px;
-    margin-top:0;
-    margin-bottom:0;
-    width: 96%
-   
+    display:flex;
+    padding:0;
+    margin:0;
+    width: 100%;
+    list-style:none;
 }
 
 
 .menuprincipal ul li{
-    display:inline;
     padding:10px;
+    list-style:none;
+    display:flex
     
     
 }
 
 
-.menuprincipal ul li a{
+.menuprincipal li a{
+    background-color: black;
+    display:block;
     text-decoration:none;
     color:white;
-    margin:0;
     font-size: 20px;
     font-family: "Segoe UI",Arial,sans-serif;
-    padding: 20px;
+    padding: 15px 20px;
     margin:0;
 }
 
 
-.menuprincipal ul li a:hover{
+.menuprincipal li a:hover{
     color: #ff5050;
     border: 1px ridge red
 }
-    
+
+
+#btnmenu{
+    display:none;
+
+}
+
+
+#btmenu:hover{
+    color:gray
+}
+
+header label{
+    font-size:25px;
+    display:block;
+    padding: 5px 10px;
+    width:20px;
+    display:none;
+}
+
 
 #fimpagina{
     background-color:black;
@@ -139,25 +160,25 @@ h2{
     bottom: 0;
     height:200px;
     border-top: 5px solid red;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     position:relative;
-    width:97.5%
-
+    width:97.5%;
+    align-items: center
 }
 
 
 #mais ul li{
     display:grid;
     justify-content:center;
-    width: 1470px;
+    width:100%;
     margin:0
 }
 
 
-#mais ul li a{
+#mais li a{
     margin:10px;
-    display:inline;
-    float:center;
+    display:block;
     text-decoration:none;
 }
 
@@ -196,3 +217,47 @@ h2{
 }
 
 
+@media(max-width:768px){
+    header label{
+        display:block;
+        cursor: pointer;
+    }
+    .menuprincipal ul{
+        position:absolute;
+        width:50%;
+        flex-direction:column;
+        margin-left:-50%;
+        transition: 0.5s;
+        Z-index:2;
+    }
+
+    .menuprincipal li {
+        border-top: 2px solid red;
+    }
+
+    #btnmenu:checked ~ .menuprincipal ul{
+        margin-left: 0;
+        
+    }
+    
+    #logo img{
+        width:15%
+    }
+    
+    h2{
+        font-size:30px
+    }
+    .slider{
+        width:80%
+        
+    }
+
+    section{
+        width:50%;
+        float: center;
+    }
+    .artg{
+        width:100%
+    }
+    
+}
