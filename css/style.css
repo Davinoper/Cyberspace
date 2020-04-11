@@ -275,4 +275,32 @@ section{
     section{
         float:center
     }
+
+}
+
+@media(min-width:800px){
+    section{
+        float:center;
+        margin:0;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    #conteudo-esquerda{
+        margin:0;
+        width:50%
+    }
+ 
+    #conteudo-direita{
+        width:35%
+    }
+
+    #conteudo-direita img{
+        width:60%
+    }
+
+    #conteudo-esquerda img{
+        width:70%
+
+    }
 }
