@@ -296,7 +296,7 @@ section{
 
 }
 
-@media(min-width:800px){
+@media(min-width:768px){
     section{
         float:center;
         margin:0;
