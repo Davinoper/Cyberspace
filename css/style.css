@@ -5,13 +5,14 @@ body{
 
 
 html{
-    width:100%
+    width:100%;
 }
 
 
 h1{
     font-size:30px
 }
+
 
 h2{
     text-align:center;
@@ -21,21 +22,24 @@ h2{
     margin-top:50px; 
 }
 
-
+.menuprincipal{
+    width: 100%;
+    overflow: hidden;
+}
 .menuprincipal ul{
     background-color:black;
     display:flex;
     padding:0;
     margin:0;
-    width: 100%;
     list-style:none;
+    overflow: hidden;
 }
 
 
 .menuprincipal ul li{
     padding:10px;
     list-style:none;
-    display:flex
+    
     
     
 }
@@ -69,6 +73,7 @@ h2{
     color:gray
 }
 
+
 header label{
     font-size:25px;
     display:block;
@@ -81,11 +86,9 @@ header label{
 #fimpagina{
     background-color:black;
     color:white;
-    clear: both;
     position: fixed ;
 	bottom: 0;
-	left: 0;
-    width: 98%;
+    width: 100%;
     height: 1px;
     padding: 30px
 }
@@ -99,8 +102,7 @@ header label{
     width:98.7%;
     margin-bottom:0;
     margin-top:0;
-    padding:10px
-    
+    padding:10px;
 }
 
 
@@ -118,12 +120,14 @@ header label{
     margin-left:auto;
     margin-right:auto;
     width:80%;
+    
 }
 
 
 .slider{
     border:2px solid black;
-    background-color:#d9d9d9
+    background-color:#d9d9d9;
+    
 }
 
 
@@ -158,6 +162,10 @@ header label{
     
 }
 
+#mais{
+    width:100%
+}
+
 
 #mais ul{
     background-color:black;
@@ -168,7 +176,6 @@ header label{
     display: flex;
     flex-direction: column;
     position:relative;
-    width:97.5%;
     align-items: center
 }
 
@@ -294,9 +301,12 @@ section{
         width:35%
     }
 
+    body,html{
+        width:100%
+    }
 }
 
-@media(min-width:768px){
+@media(min-width:800px){
     section{
         float:center;
         margin:0;
